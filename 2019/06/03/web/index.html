@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="课程总结,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="网络认证课程总结">
+<meta name="keywords" content="课程总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络认证课程总结">
+<meta property="og:url" content="https://iaojun.github.io/2019/06/03/web/index.html">
+<meta property="og:site_name" content="我是五颜六色的">
+<meta property="og:description" content="网络认证课程总结">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562170048205&di=d6e2e42d0503095147c72d36c2221187&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201604%2F10%2F20160410135026_UuGaB.jpeg">
+<meta property="og:updated_time" content="2019-07-03T13:47:50.732Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网络认证课程总结">
+<meta name="twitter:description" content="网络认证课程总结">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562170048205&di=d6e2e42d0503095147c72d36c2221187&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201604%2F10%2F20160410135026_UuGaB.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://iaojun.github.io/2019/06/03/web/">
+
+
+
+
+
+  <title>网络认证课程总结 | 我是五颜六色的</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我是五颜六色的</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">欢迎来到B612星球</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://iaojun.github.io/2019/06/03/web/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HaHa">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我是五颜六色的">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">网络认证课程总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-03T10:52:37+08:00">
+                2019-06-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-03T21:47:50+08:00">
+                2019-07-03
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/课程总结/" itemprop="url" rel="index">
+                    <span itemprop="name">课程总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562170048205&di=d6e2e42d0503095147c72d36c2221187&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201604%2F10%2F20160410135026_UuGaB.jpeg" rel="gallery_cjxnardny0009vovaw2xdf8gt" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562170048205&di=d6e2e42d0503095147c72d36c2221187&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201604%2F10%2F20160410135026_UuGaB.jpeg" itemprop="contentUrl">
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        <div class="note default"><p>网络认证课程总结</p></div>
+
+<a id="more"></a>
+
+<hr>
+<h1 id="1-导言"><a href="#1-导言" class="headerlink" title="1.导言"></a>1.导言</h1><h3 id="1-1-名词解释"><a href="#1-1-名词解释" class="headerlink" title="1.1 名词解释"></a>1.1 名词解释</h3><ul>
+<li>Authentication——鉴别</li>
+<li>Certification——认证</li>
+<li>Identification——标识</li>
+<li>PKI——公钥基础设施（Public Key Infrastructure）—以非对称密码的原理为基础设计和建设的、提供电子交易安全服务的一种网络应用的基础设施</li>
+<li>CA——数字证书认证中心</li>
+<li>Certificate——数字证书/PKI证书<h3 id="PKI系统提供什么"><a href="#PKI系统提供什么" class="headerlink" title="PKI系统提供什么?"></a>PKI系统提供什么?</h3></li>
+<li>真实性（标识与身份鉴别）</li>
+<li>完整性（不被修改，没有错误）—纠错码、安全MAC/带密钥MAC、数字签名</li>
+<li>机密性（隐私与保密）</li>
+<li>非否认性（责任确定）<h1 id="2-密码学基础"><a href="#2-密码学基础" class="headerlink" title="2.密码学基础"></a>2.密码学基础</h1><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h3><ul>
+<li>明文Plain Text—变换前的信息</li>
+<li>密文Cipher Text—变换后的信息</li>
+<li>密钥Key—确定变换的参数</li>
+<li>密码算法Crypto Algorithm—一系列变换<h3 id="2-对称密码算法–加密输入输出等长"><a href="#2-对称密码算法–加密输入输出等长" class="headerlink" title="2. 对称密码算法–加密输入输出等长"></a>2. 对称密码算法–加密输入输出等长</h3></li>
+<li>古典密码学</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>代换技术<ul>
+<li>移位密码算法</li>
+<li>单字母代换密码算法</li>
+</ul>
+</li>
+<li>置换技术<ul>
+<li>现代密码学</li>
+</ul>
+</li>
+<li>分组密码—等长block</li>
+</ol>
+<ul>
+<li>工作模式：ECB(单独)、CBC(前XOR后)、CTR（密文=计数器加密XOR明文）<ul>
+<li>DES算法–56bit密钥，64bit分组/雪崩效应</li>
+<li>三重DES–112bit密钥（2个des密钥）</li>
+<li>AES—128bit分组</li>
+<li>SM4算法（国产）    </li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>流密码—1bit1bit<ul>
+<li>祖冲之（ZUC）算法（国产）<h3 id="3-非对称密码算法–速度慢"><a href="#3-非对称密码算法–速度慢" class="headerlink" title="3. 非对称密码算法–速度慢"></a>3. 非对称密码算法–速度慢</h3></li>
+<li>RSA算法</li>
+</ul>
+</li>
+</ol>
+<p>   +加密前需要对明文进行填充</p>
+<ul>
+<li>ElGamal</li>
+<li>ECC算法（椭圆曲线加密）<ul>
+<li>可以用小的多的密钥长度达到和RSA相同的安全性。<h3 id="4-密钥交换、数字签名"><a href="#4-密钥交换、数字签名" class="headerlink" title="4. 密钥交换、数字签名"></a>4. 密钥交换、数字签名</h3></li>
+</ul>
+</li>
+<li>Diffie-Hellman密钥交换<h3 id="5-Hash（消息摘要算法、杂凑算法）–输出定长，不可逆"><a href="#5-Hash（消息摘要算法、杂凑算法）–输出定长，不可逆" class="headerlink" title="5. Hash（消息摘要算法、杂凑算法）–输出定长，不可逆"></a>5. Hash（消息摘要算法、杂凑算法）–输出定长，不可逆</h3></li>
+<li>数字签名<ul>
+<li>消息经过HASH后用私钥签名，签名结果和消息一同发送，接收方对消息hash和公钥解密结果比较。</li>
+<li>MD4、MD5、SHA-1，Standard Hash Algorithm、SHA-256、SHA-384、SHA-512、SHA3</li>
+</ul>
+</li>
+<li>消息鉴别码（HMAC）–带密钥的hash<ul>
+<li>验证完整性、可靠性<h1 id="3-口令鉴别"><a href="#3-口令鉴别" class="headerlink" title="3.口令鉴别"></a>3.口令鉴别</h1>攻击类型： 被动/主动/暴力破解/字典/重放/中间人/并行会话 攻击<br>EKE：用口令加密公钥传输，协商出一个由服务器生成的会话密钥。<br>DH-EKE<br>Verifier-based:服务器端不存储口令，只存储口令的变形<br>能找到一个鉴别过程中的问题<h1 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h1>基于对称密码算法的<br>协议存在的问题<br>多个可证安全协议放在一起就可能不再安全<br>Protocol4<br>可信第三方</li>
+</ul>
+</li>
+</ul>
+<h1 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h1><p>基于签名的（非对称）</p>
+<h1 id="6-Kerberos"><a href="#6-Kerberos" class="headerlink" title="6.Kerberos"></a>6.Kerberos</h1><h1 id="7-PKI基本结构"><a href="#7-PKI基本结构" class="headerlink" title="7.PKI基本结构"></a>7.PKI基本结构</h1><ul>
+<li><p>CA–签发证书、发布订户公钥</p>
+</li>
+<li><p>repository（资料库）—用于发布CA系统的各种公开信息</p>
+</li>
+<li><p>RA–注册机构，信息审查(管理员、审核员、录入员)</p>
+<ol>
+<li>订户向RA提出申请。</li>
+<li>RA授理订户申请，向CA提交订户申请</li>
+<li>CA签发证书，并返回给订户</li>
+<li>CA随时响应用户的查询</li>
+</ol>
+</li>
+<li><p>CRL Issuer—定期签发CRL</p>
+<ul>
+<li>OCSP</li>
+</ul>
+</li>
+<li><p>证书的基本结构：X500.DN</p>
+<ul>
+<li>版本号，序列号，签发者，有效期，证书持有者信息，公钥信息、签名<h1 id="8-证书编码"><a href="#8-证书编码" class="headerlink" title="8.证书编码"></a>8.证书编码</h1></li>
+</ul>
+</li>
+<li><p>编码方式DER。不依赖于计算机平台的无歧义的定义方式。</p>
+</li>
+<li><p>DN（证书持有者名称）由多个RDN构成</p>
+</li>
+<li><p>Sequence有序的。SET是无序的。</p>
+</li>
+<li><p>DER编码</p>
+<ul>
+<li>第一个字节表示类型，第二个字节表示长度，第三个开始表示内容</li>
+<li>长度的两种表示方式。Short Form（位表示为0XXX XXXX）。Long Form（第1位按位表示，后面n个字节表示实际长度）</li>
+</ul>
+</li>
+<li><p>OID，用一串数字来表示所有事物的方式。</p>
+<ul>
+<li>显式标签，在原有编码多包一层的方式，多了类型、长度。</li>
+<li>隐式标签，替换原有编码。<h1 id="9-证书扩展"><a href="#9-证书扩展" class="headerlink" title="9.证书扩展"></a>9.证书扩展</h1></li>
+</ul>
+</li>
+<li><p>证书中带有更多的其他信息。每个扩展信息都可以由OID确定</p>
+</li>
+<li><p>Basic Constraints  是否是CA证书，CA允许深度</p>
+</li>
+<li><p>Authority Key Identifier CA标识符</p>
+</li>
+<li><p>Subject Key Identifier  订户标识符</p>
+</li>
+<li><p>Key Usage            密钥使用范围</p>
+</li>
+<li><p>Private Key Usage Period 私钥使用期限</p>
+</li>
+<li><p>Certificate Policies      说明证书等级（能签发的证书的等级）</p>
+</li>
+<li><p>Policy Mappings       说明不同CA下不同等级的关系</p>
+</li>
+<li><p>Subject Alternative Name  订户额外名称信息</p>
+</li>
+<li><p>Issuer Alternative Name   CA额外名称信息</p>
+</li>
+<li><p>Subject Directory Attributes 订户额外属性信息</p>
+</li>
+<li><p>Name Constraints       CA签发证书的名字的列表</p>
+</li>
+<li><p>Policy Constraints       限制CP映射次数</p>
+</li>
+<li><p>Extended Key Usage     细化的证书用途</p>
+</li>
+<li><p>CRL Distribution Points   证书CRL获取点</p>
+</li>
+<li><p>Inhibit Any-Policy       可以有下N级的ANY-POLICY</p>
+</li>
+<li><p>Freshest CRL          增量CRL获取点</p>
+<h1 id="10-证书撤销"><a href="#10-证书撤销" class="headerlink" title="10.证书撤销"></a>10.证书撤销</h1></li>
+<li><p>CRL</p>
+<ul>
+<li>完全CRL－下载所有</li>
+<li>增量CRL－下载变化量</li>
+<li>直接CRL－证书签发者签发CRL</li>
+<li>间接CRL－CRL Issuer</li>
+<li>CRL分发点(CRL Distribution Point)－获取CRL的地址</li>
+</ul>
+</li>
+<li><p>OCSP</p>
+<ul>
+<li>在线证书状态查询。需要数字签名</li>
+</ul>
+</li>
+<li><p>CRT</p>
+<ul>
+<li>注意：OCSP、CRT仍然要依赖于CRL</li>
+<li>二叉hash树</li>
+<li>1次签名</li>
+</ul>
+</li>
+<li><p>短周期证书</p>
+<h1 id="11-PKI系统互联"><a href="#11-PKI系统互联" class="headerlink" title="11.PKI系统互联"></a>11.PKI系统互联</h1><h3 id="1-基本概念。"><a href="#1-基本概念。" class="headerlink" title="1.基本概念。"></a>1.基本概念。</h3></li>
+<li><p>证书验证过程就是信任传递过程。</p>
+</li>
+<li><p>信任锚：信任传递的起点。</p>
+</li>
+<li><p>信任模型：PKI系统中的用户应该具有什么样的信任锚、以及在信任传递过程中的各种措施。</p>
+<h3 id="2-信任模型"><a href="#2-信任模型" class="headerlink" title="2.信任模型"></a>2.信任模型</h3></li>
+</ul>
+<ol>
+<li>单根CA——基本模型</li>
+</ol>
+<ul>
+<li>基本模型：只有一个根CA。特点：验证证书简单。缺少扩展能力。</li>
+<li>严格层次模型：只有信任锚有自签名证书。每个CA最多只有一个上级CA。</li>
+</ul>
+<ol start="2">
+<li>多根模型</li>
+</ol>
+<ul>
+<li>证书信任列表（CTL）<ul>
+<li>用户自主处理</li>
+<li>权威发布方式</li>
+</ul>
+</li>
+<li>鉴定证书Accreditation Certificate<ul>
+<li>ACA和其他根CA都有自签名证书。作用仅仅是用来传递信任锚。</li>
+</ul>
+</li>
+<li><em>上面方式都改变了信任锚。</em></li>
+<li>交叉认证Cross Certification<ul>
+<li>验证时，将对方的CA，视为我方的sub CA。可单向、可双向。要进行策略映射（CP，CP写在交叉证书中）。</li>
+<li>扩展证书中限制：路径限制、命名限制、策略限制、策略映射</li>
+</ul>
+</li>
+<li>网状、Mesh<ul>
+<li>多次交叉认证。问题：各自为政进行交叉认证。能自主决定与哪个CA进行交叉认证。</li>
+</ul>
+</li>
+<li>桥CA（BCA）<ul>
+<li>专门处理交叉认证的机构。之签发交叉证书，不签发订户证书。引入了我们不希望的CA，扩大了范围。</li>
+<li>CA Accrediration：对CA公司进行资格审查。</li>
+</ul>
+</li>
+</ul>
+<h1 id="12-双证书体系与密钥托管"><a href="#12-双证书体系与密钥托管" class="headerlink" title="12.双证书体系与密钥托管"></a>12.双证书体系与密钥托管</h1><ol>
+<li>为什么要有双证书？ </li>
+</ol>
+<ul>
+<li>机密性的私钥应该托管、备份(政府监听需要,用户恢复需要)。数字签名私钥应该是用户自主控制的。为了支持法律法规要求，PKI区分了加密证书和签名证书。</li>
+<li>加密证书：密钥KMC生成。</li>
+<li>签名证书：密钥由订户自己生成。</li>
+<li>Key management center(KMC)—-key recovery 负责管理用户用于加解密的密钥。</li>
+</ul>
+<ol start="2">
+<li>双证书流程（4种）。</li>
+</ol>
+<ul>
+<li>流程1：KMC与用户直接交流。</li>
+<li>流程2：CA申请加密公钥，私钥KMC与用户直接通信。</li>
+<li>流程3：临时公钥保护。依赖对CA的信任，要求CA/KMC在线通信（？？，为啥）。</li>
+<li>流程4：KMC将加密密钥放入USB Key。USB Key使用pin码保护，pin码放在信封中。</li>
+</ul>
+<ol start="3">
+<li>双证书的实现和使用</li>
+</ol>
+<ul>
+<li>Key Usage扩展。True，关键扩展</li>
+<li>PKI应用系统管理困难，应用很难开展。</li>
+</ul>
+<ol start="4">
+<li>双证书体系的讨论—是一种管理措施。</li>
+<li>电子签名法—POP：私钥的拥有证明。</li>
+</ol>
+<ul>
+<li>PKCS#10格式：用户信息签名发送CA，CA公钥解密验证。恶意替换攻击。</li>
+<li>签名密钥：同上。恶意替换攻击。</li>
+<li>加密密钥：1.直接：CA用公钥加密随机信息让用户解密。2.间接：CA公钥加密证书。</li>
+<li>密钥协商密钥：在线通信。RA用申请中的公钥同用户协商session key</li>
+<li>流程1支持所有POP检查方式。流程2.3支持加密间接方式。<h1 id="13-TLS协议—目前PKI最重要的应用。"><a href="#13-TLS协议—目前PKI最重要的应用。" class="headerlink" title="13.TLS协议—目前PKI最重要的应用。"></a>13.TLS协议—目前PKI最重要的应用。</h1></li>
+</ul>
+<ol>
+<li>掌握<a href="https://github.com/iaojun/course/blob/master/picture/tls_1.png" target="_blank" rel="noopener">流程图</a>及各层功能。</li>
+<li><ul>
+<li>Record层：分块——压缩（实际不使用）——计算MAC（流密码、分组密码、AEAD(同时加密校验)）——加密</li>
+<li>Handshake层：<a href="https://github.com/iaojun/course/blob/master/picture/handshake.png" target="_blank" rel="noopener">Handshake基本过程</a>。</li>
+</ul>
+</li>
+<li>变形。<ul>
+<li>变形1：server请求client证书，多了CertificateRequest、Certificate、CertificatevVerify</li>
+<li>变形2：server证书不能用来签名。多了ServerKeyExchage</li>
+<li>变形3：会话重用。SessionId</li>
+</ul>
+</li>
+</ol>
+<h1 id="14-PKI-API（略）"><a href="#14-PKI-API（略）" class="headerlink" title="14.PKI API（略）"></a>14.PKI API（略）</h1><h1 id="15-入侵容忍CA系统"><a href="#15-入侵容忍CA系统" class="headerlink" title="15.入侵容忍CA系统"></a>15.入侵容忍CA系统</h1><ul>
+<li>秘密分享：<ul>
+<li>Access structure（n选f组合数记为l）</li>
+<li>Shamir’s Secret Sharing（f项多项式曲线）</li>
+</ul>
+</li>
+<li>方案：门限密码分散私钥到各个服务器。<ul>
+<li>ITTC   d简单拆分。服务器增加减少，调整密钥麻烦。计算简单</li>
+<li>ICNP  利用拉格朗日公式。服务器增加减少，调整密钥方便。计算麻烦</li>
+</ul>
+</li>
+</ul>
+<h1 id="16-证书透明化（CT）方案—-快速发现虚假证书"><a href="#16-证书透明化（CT）方案—-快速发现虚假证书" class="headerlink" title="16 证书透明化（CT）方案—-快速发现虚假证书"></a>16 证书透明化（CT）方案—-快速发现虚假证书</h1><ol>
+<li>方案的提出<br>解决虚假证书问题。用户快速发现虚假证书的一种方式。</li>
+<li>原理：公开日志。</li>
+<li>组成：公开日志服务器（公开日志—只增、可审计）、监视员、审计员</li>
+<li>增强的证书验证：收到证书并验证通过之后，公开日志服务器会向提交者返回一个SCT凭据（签名的证书时间戳），用户不仅要验证证书，还要验证CT</li>
+<li>性能：对虚假证书反应更加迅速，更容易对CA行为进行监控。</li>
+</ol>
+<h1 id="17-多种类型的身份鉴别机制"><a href="#17-多种类型的身份鉴别机制" class="headerlink" title="17.多种类型的身份鉴别机制"></a>17.多种类型的身份鉴别机制</h1><ul>
+<li>What you know(口令)<ul>
+<li>口令激活PKI（容易遭受攻击，对服务器安全更加敏感）<ul>
+<li>虚拟软令牌<ul>
+<li>私钥用口令加密，被加密的私钥存放于服务器，使用时通过口令验证身份，协商会话秘钥，获得数据解密得私钥。</li>
+</ul>
+</li>
+<li>虚拟智能卡<ul>
+<li>d=d1+d2。d1是用户口令，d2是存储在服务器上的秘密元素。</li>
+<li>使用时用户通过口令向服务器验证身份，双方协商会话秘钥</li>
+<li>服务器端：c2=m^(d2)mod N，并将其发送给用户</li>
+<li>用户端：c=c2 ^(d1)=m^(d1)mod N=m^(d)mod</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于手机密码模块——将用户部分存放至手机中</li>
+</ul>
+</li>
+<li>What you have（USB KEY、TOKEN、手机验证）</li>
+<li>What you are（生物特征）</li>
+<li>Mixed（多因素身份鉴别）<ul>
+<li>其安全性不能低于通常情况下的鉴别机制</li>
+</ul>
+</li>
+<li>somebody you know（紧急鉴别）<h1 id="18-OAuth-amp-OpenId"><a href="#18-OAuth-amp-OpenId" class="headerlink" title="18.OAuth &amp;OpenId"></a>18.OAuth &amp;OpenId</h1><h3 id="18-1-单点登录（SSO）"><a href="#18-1-单点登录（SSO）" class="headerlink" title="18.1 单点登录（SSO）"></a>18.1 单点登录（SSO）</h3></li>
+<li>Kerberos–典型的单点登录 </li>
+<li>SAML<h3 id="18-2-OAuth–授权（openId的基础）基于非对称、签名"><a href="#18-2-OAuth–授权（openId的基础）基于非对称、签名" class="headerlink" title="18.2 OAuth–授权（openId的基础）基于非对称、签名"></a>18.2 OAuth–授权（openId的基础）基于非对称、签名</h3></li>
+<li>Abstract Protocol Flow（此处应该有图）<ol>
+<li>client向resource owner发出authorization request，返回authorization grant。</li>
+<li>client向authorization server发出authorization grant，返回access token。</li>
+<li>client向resource server发出access token，返回protected server。</li>
+</ol>
+</li>
+<li><a href="https://github.com/iaojun/course/blob/master/picture/authorization_code_flow.png/" target="_blank" rel="noopener">Authorization code Flow</a>(此处有图)<ol>
+<li>A:client重定向resource owner的user-agent到authorization终端。</li>
+<li>C:authorization server使用前面提供的重定向URI将user-agent重定向回client。重定向URI包括一个authorization code和client先前提供的本地状态。</li>
+<li>D:client通过authorization code从authorization server的令牌端点请求访问令牌。在发出请求时，client将使用授权服务器进行身份验证。 </li>
+<li>E：授权服务器使用访问令牌和刷新令牌（可选）进行响应。授权服务器对客户端进行身份验证，验证授权代码，并确保收到的重定向URI与步骤（c）中用于重定向客户端的URI匹配。 </li>
+<li><a href="https://github.com/iaojun/course/blob/master/picture/Alice_authorization.png/" target="_blank" rel="noopener">实例图</a></li>
+</ol>
+</li>
+<li>CSRF攻击<h3 id="18-3-OpenId–鉴别、认证"><a href="#18-3-OpenId–鉴别、认证" class="headerlink" title="18.3 OpenId–鉴别、认证"></a>18.3 OpenId–鉴别、认证</h3></li>
+</ul>
+<ol>
+<li><a href="https://github.com/iaojun/course/blob/master/picture/OPENID_2.png" target="_blank" rel="noopener">授权码鉴别</a><ul>
+<li><a href="https://github.com/iaojun/course/blob/master/picture/OPENID_1.png/" target="_blank" rel="noopener">实例图</a></li>
+<li>所有令牌从令牌端点获得</li>
+</ul>
+</li>
+<li><a href="https://github.com/iaojun/course/blob/master/picture/OPENID_3.png" target="_blank" rel="noopener">隐式鉴别</a><ul>
+<li>所有令牌从授权端点获得</li>
+</ul>
+</li>
+<li>混合鉴别</li>
+<li>以上3种区别就是依赖方获得令牌方式不同。</li>
+<li>身份验证信息的返回包含在ID令牌中。<h1 id="19-Eduroam"><a href="#19-Eduroam" class="headerlink" title="19.Eduroam"></a>19.Eduroam</h1></li>
+<li>定义：专为科研院所和学校开发的全球无限漫游认证服务。</li>
+<li>Eduroam协议过程<ul>
+<li>EAP（可扩展鉴别协议）–由于实体之间通信协议不同，但都支持这种鉴别协议。</li>
+<li>移动设备和AP(无线热点)之间通信采用802.1x协议，AP和服务器、服务器和服务器之间通信采用RADIUS协议。AP作为两种协议的中继，使鉴别服务器和移动终端之间建立EAP逻辑信道。</li>
+</ul>
+</li>
+<li>EAP协议实现方法—EAP-TTLS协议。<ul>
+<li>TLS握手阶段—鉴别服务器和移动终端之间的TLS隧道</li>
+<li>隧道内通信阶段—用户身份鉴别（移动终端直接将用户名和口令明文发送给鉴别服务器）</li>
+<li>具体过程：EAP请求由AP发起，之后AP仅转发EAP数据包以及判断EAP协议是否结束。移动终端和鉴别服务器进行完整的TLS协商。最后鉴别服务器发送成功或者失败的EAP数据包以表示EAP协议的结束。</li>
+</ul>
+</li>
+<li>使用DNS树。<ul>
+<li>保证RADIUS数据包能从用户访问机构的服务器到达用户所处机构的服务器。将用户身份发送给用户所在机构验证其身份。<h1 id="20-FIDO（Fast-Identity-Online）"><a href="#20-FIDO（Fast-Identity-Online）" class="headerlink" title="20.FIDO（Fast Identity Online）"></a>20.FIDO（Fast Identity Online）</h1></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>对于移动终端安全性的不信任</li>
+<li>在服务器端将用户与移动终端的可信环境进行身份绑定，将用户与服务器之间的直接鉴别转变为两段式鉴别：移动终端鉴别用户，网络鉴别移动终端。</li>
+<li>典型方案：FIDO、IFAA<h3 id="UAF-Universal-Authentication-Framework"><a href="#UAF-Universal-Authentication-Framework" class="headerlink" title="UAF(Universal Authentication Framework)"></a>UAF(Universal Authentication Framework)</h3></li>
+<li>无密码、多因素认证<h3 id="U2F-Universal-2nd-Factor"><a href="#U2F-Universal-2nd-Factor" class="headerlink" title="U2F(Universal 2nd Factor)"></a>U2F(Universal 2nd Factor)</h3></li>
+<li>第二因素<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3></li>
+<li>注册：用户用生物信息等解锁FIDO鉴别器，用户设备产生公私钥对，将公钥发送给服务器，服务器将公钥和用户信息绑定。</li>
+<li>登录：客户端选择用户生物身份信息对应的私钥发送签名消息，服务器用相应的公钥验证。<h1 id="21-PKI信任机制的安全增强方案"><a href="#21-PKI信任机制的安全增强方案" class="headerlink" title="21.PKI信任机制的安全增强方案"></a>21.PKI信任机制的安全增强方案</h1></li>
+</ul>
+<ol>
+<li>证书透明化：引入CT，以审计CA</li>
+<li>限制CA权力（签发的能力）<ul>
+<li>Certlock:TLS服务器只会向同一个国家申请证书。记录访问时证书的CA信息，再次登录不同时比较CA国家，不同则警告</li>
+<li>Cage:限制CA可以签发的顶级域名（CA签发范围的限定规则：CA在相应的顶级域名中至少签发过一个证书）</li>
+<li>DANE：为DNS中的数据增加数字签名<ul>
+<li>DNS相关概念：DNS是以域名为索引的，关于主机信息的分布式数据库</li>
+</ul>
+</li>
+<li>CAA:是事前的，用以签发证书之前CA的检查</li>
+</ul>
+</li>
+<li>浏览器端实施检测（判断是否为虚假证书）</li>
+</ol>
+<hr>
+
+      
+    </div>
+    <div> 
+       
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+                        
+<div>
+  
+    <div style="text-align:center;color: #555;font-size:15px;">驶离B612星球的航班即将启航<i class="fa fa-plane"></i>，请不要忘记带你的玫瑰<i class="fa fa-heart"></i>
+</div>
+  
+</div> 
+      
+    </div>
+    
+    
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>玫瑰花语:</span><a href="/2019/06/03/web/">网络认证课程总结</a></p>
+  <p><span>守护园丁:</span><a href="/" title="访问 HaHa 的个人博客">HaHa</a></p>
+  <p><span>种植时间:</span>2019年06月03日 - 10:06</p>
+  <p><span>最后浇水:</span>2019年07月03日 - 21:07</p>
+  <p><span>种子出处:</span><a href="/2019/06/03/web/" title="网络认证课程总结">https://iaojun.github.io/2019/06/03/web/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://iaojun.github.io/2019/06/03/web/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>守护协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留种子出处及守护园丁。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+      
+    </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/课程总结/" rel="tag"><i class="fa fa-tag"></i> 课程总结</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/03/hello-world/" rel="prev" title="Hello world">
+                Hello world <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="HaHa">
+            
+              <p class="site-author-name" itemprop="name">HaHa</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/iaojun" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/1feeaf4d8831" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-book"></i>简书</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-导言"><span class="nav-text">1.导言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-名词解释"><span class="nav-text">1.1 名词解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PKI系统提供什么"><span class="nav-text">PKI系统提供什么?</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#2-密码学基础"><span class="nav-text">2.密码学基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-概念"><span class="nav-text">1. 概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-对称密码算法–加密输入输出等长"><span class="nav-text">2. 对称密码算法–加密输入输出等长</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-非对称密码算法–速度慢"><span class="nav-text">3. 非对称密码算法–速度慢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-密钥交换、数字签名"><span class="nav-text">4. 密钥交换、数字签名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Hash（消息摘要算法、杂凑算法）–输出定长，不可逆"><span class="nav-text">5. Hash（消息摘要算法、杂凑算法）–输出定长，不可逆</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-口令鉴别"><span class="nav-text">3.口令鉴别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4"><span class="nav-text">4.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5"><span class="nav-text">5.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-Kerberos"><span class="nav-text">6.Kerberos</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-PKI基本结构"><span class="nav-text">7.PKI基本结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-证书编码"><span class="nav-text">8.证书编码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-证书扩展"><span class="nav-text">9.证书扩展</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-证书撤销"><span class="nav-text">10.证书撤销</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-PKI系统互联"><span class="nav-text">11.PKI系统互联</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-基本概念。"><span class="nav-text">1.基本概念。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-信任模型"><span class="nav-text">2.信任模型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-双证书体系与密钥托管"><span class="nav-text">12.双证书体系与密钥托管</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-TLS协议—目前PKI最重要的应用。"><span class="nav-text">13.TLS协议—目前PKI最重要的应用。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14-PKI-API（略）"><span class="nav-text">14.PKI API（略）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15-入侵容忍CA系统"><span class="nav-text">15.入侵容忍CA系统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16-证书透明化（CT）方案—-快速发现虚假证书"><span class="nav-text">16 证书透明化（CT）方案—-快速发现虚假证书</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#17-多种类型的身份鉴别机制"><span class="nav-text">17.多种类型的身份鉴别机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-OAuth-amp-OpenId"><span class="nav-text">18.OAuth &amp;OpenId</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#18-1-单点登录（SSO）"><span class="nav-text">18.1 单点登录（SSO）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-2-OAuth–授权（openId的基础）基于非对称、签名"><span class="nav-text">18.2 OAuth–授权（openId的基础）基于非对称、签名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-3-OpenId–鉴别、认证"><span class="nav-text">18.3 OpenId–鉴别、认证</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#19-Eduroam"><span class="nav-text">19.Eduroam</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#20-FIDO（Fast-Identity-Online）"><span class="nav-text">20.FIDO（Fast Identity Online）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UAF-Universal-Authentication-Framework"><span class="nav-text">UAF(Universal Authentication Framework)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#U2F-Universal-2nd-Factor"><span class="nav-text">U2F(Universal 2nd Factor)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程"><span class="nav-text">过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21-PKI信任机制的安全增强方案"><span class="nav-text">21.PKI信任机制的安全增强方案</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HaHa</span>
+
+  
+</div>
+
+
+  <div class="powered-by">  红玫瑰</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">小狐狸 & 小王子</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
+<script type="text/javascript" src="/js/src/love.js"></script>
